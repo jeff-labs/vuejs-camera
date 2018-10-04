@@ -3,7 +3,7 @@
 
     <div class="camera-wrapper">
       <video ref="camera" v-show="!blob || (capture === 'video' && isAlreadyRecorded) || (capture !== 'photo' && !isAlreadyRecorded)" id='preview' width="100%" height="auto" autoPlay></video>
-      <img ref="photo" v-if="capture === 'photo'" v-show="blob" alt="photo" width="100%" height="auto">
+      <img id="photo" ref="photo" v-if="capture === 'photo'" v-show="blob" alt="photo" width="100%" height="auto">
     </div>
 
     <select id="camera-select" v-if="devices.length && !isRecording && !isAlreadyRecorded" v-model="selected" @change="cameraChanged">
@@ -266,7 +266,12 @@ export default {
 </script>
 
 <style lang='scss'>
-@import "@/assets/css/variables.scss";
+$light-gray: #F6F6F7;
+$medium-gray: #DDE3E8;
+$dark-gray: #888888;
+$dark-blue:  #2a375c;
+$light-blue: #89D5D5 ;
+$orange: #ff6666;
 
 .camera {
   &:hover {
@@ -287,12 +292,12 @@ export default {
   position: relative;
   width: 100%;
 
-  video {
+  #preview {
     position: relative;
     border-radius: 5px;
   }
 
-  img {
+  #photo {
     position: relative;
     border-radius: 5px;
   }

@@ -6,7 +6,7 @@ A component that allow to record a video o take pictures in your website with th
 
 ## DEMO
 
-[https://juandiegombr.github.io/vuejs-camera/]( https://juandiegombr.github.io/vuejs-camera/)
+[https://mrjeffapp.github.io/vuejs-camera/]( https://mrjeffapp.github.io/vuejs-camera/)
 
 
 ## Installation
@@ -28,9 +28,14 @@ export default {
   }
 }
 ```
+```
+// Add in your index.html
+<script src="https://use.fontawesome.com/e9b7441153.js"></script>
+```
 
 ```
-<VueCamera />
+// Enjoy it!
+<VueCamera/>
 ```
 
 ## Props
