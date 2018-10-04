@@ -11,12 +11,16 @@ A component that allow to record a video o take pictures in your website with th
 
 ## Installation
 ```
-yarn add vuejs-camera
-npm install --save vuejs-camera
+yarn add @mrjeffapp/vuejs-camera
+npm install --save @mrjeffapp/vuejs-camera
 ```
 
 ```
-import VueCamera from 'vuejs-camera'
+// Global - In your main.js
+import '@mrjeffapp/vuejs-camera'
+
+// Local - In your Component.vue
+import VueCamera from '@mrjeffapp/vuejs-camera'
 
 export default {
   components: {
