@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <script src="https://use.fontawesome.com/e9b7441153.js"></script>
+    <link href="./bootstrap-tour-standalone.min.css" rel="stylesheet">
+    <script src="./jquery.js"></script>
+    <script src="./bootstrap-tour-standalone.min.js"></script>
+    <title>vue-test</title>
+  </head>
+  <body>
+    <!-- <noscript>
+      <strong>We're sorry but vue-test doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript> -->
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+
+    var tour = new Tour({
+      steps: [
+        {
+          element: "#camera-select",
+          title: "Title of my step",
+          content: "Content of my step"
+        },
+        {
+          element: "#camera-select",
+          title: "Title of my step",
+          content: "Content of my step"
+        }
+      ]});
+
+      // Initialize the tour
+      tour.init();
+
+      // Start the tour
+      tour.start();
+    </script>
+  </body>
+</html>
