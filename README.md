@@ -1,5 +1,7 @@
-# vuejs-camera
+# vuejs-camera 
 A component that allow to record a video o take pictures in your website with the HTML5 API.
+
+![npm (scoped)](https://img.shields.io/npm/v/@mrjeffapp/vuejs-camera.svg?style=flat-square)
 
 ![demo gif](https://github.com/juandiegombr/vuejs-camera/blob/master/demo.gif?raw=true)
 
